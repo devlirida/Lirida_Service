@@ -73,6 +73,9 @@ public class LiridaModulo {
     public static final Long SERVIÇO_REALIZADO = 59L;
     public static final Long FINANCEIRO = 60L;
     public static final Long SERVIÇO = 61L;
+    public static final Long LEITOR_NFC = 62L;
+    public static final Long LEITOR_NFE = 63L;
+    public static final Long VENDEDOR = 64L;
     
 
 }
