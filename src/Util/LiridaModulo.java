@@ -76,6 +76,7 @@ public class LiridaModulo {
     public static final Long LEITOR_NFC = 62L;
     public static final Long LEITOR_NFE = 63L;
     public static final Long VENDEDOR = 64L;
+    public static final Long UNIDADE_FEDERATIVA = 65L;
     
 
 }
