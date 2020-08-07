@@ -5,79 +5,58 @@
 package Bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class Fornecedor {
 
-    private Long seqFornecedor;
-    private Long seqUsuario;
-    private String codigo;
-    private Date dataCadastro;
-    private Date dataUltAlteracao;
-    private String situacao;
-    private String situacaoDescricao;
-    private String tipoPessoa;
-    private String nome;
-    private String documento;
-    private String apelido;
-    private String telefone;
-    private String whatsapp;
-    private String email;
-    private String site;
-    private String emailUsuario;
-    private String vendedor;
-    private String contato1;
-    private String titulo1;
-    private String telefone1;
-    private String email1;
-    private String contato2;
-    private String titulo2;
-    private String telefone2;
-    private String email2;
-    private String contato3;
-    private String titulo3;
-    private String telefone3;
-    private String email3;
-    private String logradouroCob;
-    private String numeroCob;
-    private String complementoCob;
-    private String bairroCob;
-    private String cidadeCob;
-    private String ufCob;
-    private String ibgeCob;
-    private String logradouroEnt;
-    private String numeroEnt;
-    private String complementoEnt;
-    private String bairroEnt;
-    private String cidadeEnt;
-    private String ufEnt;
-    private String ibgeEnt;
-    private String observacao;
-    private String chave;
-    private String tag01;
-    private String tag02;
-    private String tag03;
-    private String tag04;
-    private String tag05;
-    private String tag06;
-    private String tag07;
-    private String tag08;
-    private String tag09;
-    private String tag10;
-    private String cepCob;
-    private String cepEnt;
-    private String inscricaoEstadual;
-    private String inscricaoMunicipal;
+    
 
-    private String linha1;
-    private String linha2;
+private Long seqCliente;
+private Long seqUsuario;
+private String codigo;
+private Date dataCadastro;
+private Date dataUltAlteracao;
+private String situacao;
+private String situacaoDescricao;
+private String tipoPessoa;
+private String nome;
+private String documento;
+private String apelido;
+private String telefone;
+private String whatsapp;
+private String email;
+private String site;
+private String emailUsuario;
+private String vendedor;
+private String observacao;
+private String chave;
+private String tag01;
+private String tag02;
+private String tag03;
+private String tag04;
+private String tag05;
+private String tag06;
+private String tag07;
+private String tag08;
+private String tag09;
+private String tag10;
+private String inscricaoMunicipal;
+private String inscricaoEstadual;
+private String codigoProcesso;
+private String codigoProcessoItem;
+private String linha1;
+private String linha2;
+private List<FornecedorEndereco> listaEndereco;
+private List<FornecedorContato> listaContato; 
 
-// Criar GETs e SETs
-    public Long getSeqFornecedor() {
-        return seqFornecedor;
+/* GET SET */
+
+    public Long getSeqCliente() {
+        return seqCliente;
     }
 
-    public void setSeqFornecedor(Long seqFornecedor) {
-        this.seqFornecedor = seqFornecedor;
+    public void setSeqCliente(Long seqCliente) {
+        this.seqCliente = seqCliente;
     }
 
     public Long getSeqUsuario() {
@@ -208,214 +187,6 @@ public class Fornecedor {
         this.vendedor = vendedor;
     }
 
-    public String getContato1() {
-        return contato1;
-    }
-
-    public void setContato1(String contato1) {
-        this.contato1 = contato1;
-    }
-
-    public String getTitulo1() {
-        return titulo1;
-    }
-
-    public void setTitulo1(String titulo1) {
-        this.titulo1 = titulo1;
-    }
-
-    public String getTelefone1() {
-        return telefone1;
-    }
-
-    public void setTelefone1(String telefone1) {
-        this.telefone1 = telefone1;
-    }
-
-    public String getEmail1() {
-        return email1;
-    }
-
-    public void setEmail1(String email1) {
-        this.email1 = email1;
-    }
-
-    public String getContato2() {
-        return contato2;
-    }
-
-    public void setContato2(String contato2) {
-        this.contato2 = contato2;
-    }
-
-    public String getTitulo2() {
-        return titulo2;
-    }
-
-    public void setTitulo2(String titulo2) {
-        this.titulo2 = titulo2;
-    }
-
-    public String getTelefone2() {
-        return telefone2;
-    }
-
-    public void setTelefone2(String telefone2) {
-        this.telefone2 = telefone2;
-    }
-
-    public String getEmail2() {
-        return email2;
-    }
-
-    public void setEmail2(String email2) {
-        this.email2 = email2;
-    }
-
-    public String getContato3() {
-        return contato3;
-    }
-
-    public void setContato3(String contato3) {
-        this.contato3 = contato3;
-    }
-
-    public String getTitulo3() {
-        return titulo3;
-    }
-
-    public void setTitulo3(String titulo3) {
-        this.titulo3 = titulo3;
-    }
-
-    public String getTelefone3() {
-        return telefone3;
-    }
-
-    public void setTelefone3(String telefone3) {
-        this.telefone3 = telefone3;
-    }
-
-    public String getEmail3() {
-        return email3;
-    }
-
-    public void setEmail3(String email3) {
-        this.email3 = email3;
-    }
-
-    public String getLogradouroCob() {
-        return logradouroCob;
-    }
-
-    public void setLogradouroCob(String logradouroCob) {
-        this.logradouroCob = logradouroCob;
-    }
-
-    public String getNumeroCob() {
-        return numeroCob;
-    }
-
-    public void setNumeroCob(String numeroCob) {
-        this.numeroCob = numeroCob;
-    }
-
-    public String getComplementoCob() {
-        return complementoCob;
-    }
-
-    public void setComplementoCob(String complementoCob) {
-        this.complementoCob = complementoCob;
-    }
-
-    public String getBairroCob() {
-        return bairroCob;
-    }
-
-    public void setBairroCob(String bairroCob) {
-        this.bairroCob = bairroCob;
-    }
-
-    public String getCidadeCob() {
-        return cidadeCob;
-    }
-
-    public void setCidadeCob(String cidadeCob) {
-        this.cidadeCob = cidadeCob;
-    }
-
-    public String getUfCob() {
-        return ufCob;
-    }
-
-    public void setUfCob(String ufCob) {
-        this.ufCob = ufCob;
-    }
-
-    public String getIbgeCob() {
-        return ibgeCob;
-    }
-
-    public void setIbgeCob(String ibgeCob) {
-        this.ibgeCob = ibgeCob;
-    }
-
-    public String getLogradouroEnt() {
-        return logradouroEnt;
-    }
-
-    public void setLogradouroEnt(String logradouroEnt) {
-        this.logradouroEnt = logradouroEnt;
-    }
-
-    public String getNumeroEnt() {
-        return numeroEnt;
-    }
-
-    public void setNumeroEnt(String numeroEnt) {
-        this.numeroEnt = numeroEnt;
-    }
-
-    public String getComplementoEnt() {
-        return complementoEnt;
-    }
-
-    public void setComplementoEnt(String complementoEnt) {
-        this.complementoEnt = complementoEnt;
-    }
-
-    public String getBairroEnt() {
-        return bairroEnt;
-    }
-
-    public void setBairroEnt(String bairroEnt) {
-        this.bairroEnt = bairroEnt;
-    }
-
-    public String getCidadeEnt() {
-        return cidadeEnt;
-    }
-
-    public void setCidadeEnt(String cidadeEnt) {
-        this.cidadeEnt = cidadeEnt;
-    }
-
-    public String getUfEnt() {
-        return ufEnt;
-    }
-
-    public void setUfEnt(String ufEnt) {
-        this.ufEnt = ufEnt;
-    }
-
-    public String getIbgeEnt() {
-        return ibgeEnt;
-    }
-
-    public void setIbgeEnt(String ibgeEnt) {
-        this.ibgeEnt = ibgeEnt;
-    }
-
     public String getObservacao() {
         return observacao;
     }
@@ -512,20 +283,12 @@ public class Fornecedor {
         this.tag10 = tag10;
     }
 
-    public String getCepCob() {
-        return cepCob;
+    public String getInscricaoMunicipal() {
+        return inscricaoMunicipal;
     }
 
-    public void setCepCob(String cepCob) {
-        this.cepCob = cepCob;
-    }
-
-    public String getCepEnt() {
-        return cepEnt;
-    }
-
-    public void setCepEnt(String cepEnt) {
-        this.cepEnt = cepEnt;
+    public void setInscricaoMunicipal(String inscricaoMunicipal) {
+        this.inscricaoMunicipal = inscricaoMunicipal;
     }
 
     public String getInscricaoEstadual() {
@@ -536,12 +299,20 @@ public class Fornecedor {
         this.inscricaoEstadual = inscricaoEstadual;
     }
 
-    public String getInscricaoMunicipal() {
-        return inscricaoMunicipal;
+    public String getCodigoProcesso() {
+        return codigoProcesso;
     }
 
-    public void setInscricaoMunicipal(String inscricaoMunicipal) {
-        this.inscricaoMunicipal = inscricaoMunicipal;
+    public void setCodigoProcesso(String codigoProcesso) {
+        this.codigoProcesso = codigoProcesso;
+    }
+
+    public String getCodigoProcessoItem() {
+        return codigoProcessoItem;
+    }
+
+    public void setCodigoProcessoItem(String codigoProcessoItem) {
+        this.codigoProcessoItem = codigoProcessoItem;
     }
 
     public String getLinha1() {
@@ -560,4 +331,21 @@ public class Fornecedor {
         this.linha2 = linha2;
     }
 
+    public List<FornecedorEndereco> getListaEndereco() {
+        return listaEndereco;
+    }
+
+    public void setListaEndereco(List<FornecedorEndereco> listaEndereco) {
+        this.listaEndereco = listaEndereco;
+    }
+
+    public List<FornecedorContato> getListaContato() {
+        return listaContato;
+    }
+
+    public void setListaContato(List<FornecedorContato> listaContato) {
+        this.listaContato = listaContato;
+    }
+
+    
 }
