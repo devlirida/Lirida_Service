@@ -11,7 +11,7 @@ public class Fornecedor {
 
     
 
-private Long seqCliente;
+private Long seqFornecedor;
 private Long seqUsuario;
 private String codigo;
 private Date dataCadastro;
@@ -51,12 +51,12 @@ private List<FornecedorContato> listaContato;
 
 /* GET SET */
 
-    public Long getSeqCliente() {
-        return seqCliente;
+    public Long getSeqFornecedor() {
+        return seqFornecedor;
     }
 
-    public void setSeqCliente(Long seqCliente) {
-        this.seqCliente = seqCliente;
+    public void setSeqFornecedor(Long seqFornecedor) {
+        this.seqFornecedor = seqFornecedor;
     }
 
     public Long getSeqUsuario() {
