@@ -1,8 +1,11 @@
 
+
 /***********************************************************************************/
 /*CRIADO DE FORMA AUTOMATICA PELO GERADOR DE CÓDIGO DA CROSSYSTEM*/
 /*Data:  2020-08-07 */
 /***********************************************************************************/
+
+package Bean;
 
 import java.math.BigDecimal;
 import java.util.Date;
