@@ -5,7 +5,7 @@
  */
 package Interface;
 
-import ClausulaSQL.ClausulaWhere;
+import Util.LiridaParametro;
 import java.util.HashMap;
 import java.util.List;
 
@@ -21,9 +21,9 @@ public interface IDAO {
 
     public HashMap<String, String> alterar(Object pObject);
 
-    public List<Object> listar(ClausulaWhere sClausula);
+    public List<Object> listar(List<LiridaParametro> pListaParametro);
     
-    public Object buscar(ClausulaWhere sClausula);
+    public Object buscar(LiridaParametro pParametro);
 
     public HashMap<String, String> deletar(Object pObject);
 
