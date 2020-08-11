@@ -23,7 +23,7 @@ public interface IDAO {
 
     public List<Object> listar(List<LiridaParametro> pListaParametro);
     
-    public Object buscar(LiridaParametro pParametro);
+    public Object buscar(List<LiridaParametro> pListaParametro);
 
     public HashMap<String, String> deletar(Object pObject);
 
