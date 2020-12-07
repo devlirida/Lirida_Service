@@ -5,26 +5,25 @@
  */
 package Interface;
 
-import Util.LiridaParametro;
-import java.util.HashMap;
 import java.util.List;
 
 /**
  *
  * @author bruno
  */
+
 public interface IDAO {
 
-    public HashMap<String, String> inserir(Object pObject);
+    public String inserir(Object pObject);
 
     public Object novo(Object pObject);
 
-    public HashMap<String, String> alterar(Object pObject);
+    public String alterar(Object pObject);
 
-    public List<Object> listar(List<LiridaParametro> pListaParametro);
+    public List<Object> listar(String pData);
     
-    public Object buscar(List<LiridaParametro> pListaParametro);
+    public Object buscar(String pData);
 
-    public HashMap<String, String> deletar(Object pObject);
+    public String deletar(String pCodigo);
 
 }

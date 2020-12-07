@@ -79,6 +79,7 @@ public class LiridaModulo {
     public static final Long UNIDADE_FEDERATIVA = 65L;
     public static final Long TABELA_PREÇO = 66L;
     public static final Long TABELA_PREÇO_ITEM = 67L;
+    public static final Long APONTAMENTO_SCAN = 68L;
     
 
 }
