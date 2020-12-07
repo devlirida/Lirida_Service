@@ -1,2 +1,5 @@
 /build/
 /dist/
+/Service/dist/
+/Service/build/
+/Service/nbproject/private/
