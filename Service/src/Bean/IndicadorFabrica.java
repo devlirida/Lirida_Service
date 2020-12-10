@@ -5,6 +5,7 @@
 package Bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class IndicadorFabrica {
 
@@ -28,6 +29,7 @@ public class IndicadorFabrica {
     private String linha1;
     private String linha2;
     private String linha3;
+private List<IndicadorFabricaItem>listaItem;
 
 // Criar GETs e SETs
 
@@ -189,6 +191,14 @@ public class IndicadorFabrica {
 
     public void setLinha3(String linha3) {
         this.linha3 = linha3;
+    }
+
+    public List<IndicadorFabricaItem> getListaItem() {
+        return listaItem;
+    }
+
+    public void setListaItem(List<IndicadorFabricaItem> listaItem) {
+        this.listaItem = listaItem;
     }
     
 }

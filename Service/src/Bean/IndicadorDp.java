@@ -6,6 +6,7 @@
 package Bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class IndicadorDp {
 
@@ -29,6 +30,7 @@ private String tag10;
 private String linha1;
 private String linha2;
 private String linha3;
+private List<IndicadorDpItem>listaItem;
 
 // Criar GETs e SETs
 

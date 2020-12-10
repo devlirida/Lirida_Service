@@ -6,6 +6,7 @@
 package Bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class IndicadorMercado {
 
@@ -29,6 +30,7 @@ private String tag10;
 private String linha1;
 private String linha2;
 private String linha3;
+private List<IndicadorMercadoItem>listaItem;
 
 // Criar GETs e SETs
 
@@ -190,6 +192,14 @@ private String linha3;
 
     public void setLinha3(String linha3) {
         this.linha3 = linha3;
+    }
+
+    public List<IndicadorMercadoItem> getListaItem() {
+        return listaItem;
+    }
+
+    public void setListaItem(List<IndicadorMercadoItem> listaItem) {
+        this.listaItem = listaItem;
     }
 
 }

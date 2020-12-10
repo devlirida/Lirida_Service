@@ -5,6 +5,7 @@
 package Bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class IndicadorRh {
 
@@ -28,6 +29,7 @@ public class IndicadorRh {
     private String linha1;
     private String linha2;
     private String linha3;
+private List<IndicadorRhItem>listaItem;
 
 // Criar GETs e SETs
 
@@ -189,6 +191,14 @@ public class IndicadorRh {
 
     public void setLinha3(String linha3) {
         this.linha3 = linha3;
+    }
+
+    public List<IndicadorRhItem> getListaItem() {
+        return listaItem;
+    }
+
+    public void setListaItem(List<IndicadorRhItem> listaItem) {
+        this.listaItem = listaItem;
     }
     
 }

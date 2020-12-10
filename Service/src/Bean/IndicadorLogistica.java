@@ -5,6 +5,7 @@
 package Bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class IndicadorLogistica {
 
@@ -28,6 +29,8 @@ public class IndicadorLogistica {
     private String linha1;
     private String linha2;
     private String linha3;
+private List<IndicadorLogisticaItem>listaItem;
+    
 
 // Criar GETs e SETs
     public Long getSeqIndicadorLogistica() {
@@ -188,6 +191,14 @@ public class IndicadorLogistica {
 
     public void setLinha3(String linha3) {
         this.linha3 = linha3;
+    }
+
+    public List<IndicadorLogisticaItem> getListaItem() {
+        return listaItem;
+    }
+
+    public void setListaItem(List<IndicadorLogisticaItem> listaItem) {
+        this.listaItem = listaItem;
     }
 
 }

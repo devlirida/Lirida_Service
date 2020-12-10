@@ -5,6 +5,7 @@
 package Bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class IndicadorFinanceiro {
 
@@ -28,6 +29,7 @@ public class IndicadorFinanceiro {
     private String linha1;
     private String linha2;
     private String linha3;
+    private List<IndicadorFinanceiroItem> listaItem;
 
 // Criar GETs e SETs
     public Long getSeqIndicadorFinanceiro() {
@@ -188,6 +190,14 @@ public class IndicadorFinanceiro {
 
     public void setLinha3(String linha3) {
         this.linha3 = linha3;
+    }
+
+    public List<IndicadorFinanceiroItem> getListaItem() {
+        return listaItem;
+    }
+
+    public void setListaItem(List<IndicadorFinanceiroItem> listaItem) {
+        this.listaItem = listaItem;
     }
 
 }

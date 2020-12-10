@@ -7,7 +7,7 @@ package Bean;
 
 import java.util.Date;
 
-public class IndicadorComercial1Item {
+public class IndicadorComercialItem {
 
 private Long seqIndicadorComercialItem;
 private Long seqUsuario;
